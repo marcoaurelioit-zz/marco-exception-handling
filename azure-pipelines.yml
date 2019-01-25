@@ -15,8 +15,8 @@ variables:
   buildConfiguration: 'Release'
 
   ##Marco.AspNetCore.ExceptionHandling
-  Pack1Version: '1.0.0'
-  Pack1PushToNuget: False
+  Pack1Version: '1.0.1'
+  Pack1PushToNuget: True
 
 steps:
 # Install NuGet Tool
