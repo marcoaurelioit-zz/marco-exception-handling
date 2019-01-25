@@ -14,7 +14,8 @@ variables:
   buildPlatform: 'Any CPU'
   buildConfiguration: 'Release'
 
-  ##Marco.AspNetCore.ExceptionHandling
+  #Pack1 -------------------  
+  #ExceptionHandling 
   Pack1Version: '1.0.1'
   Pack1PushToNuget: True
 
@@ -50,7 +51,7 @@ steps:
   inputs:
     command: publish
     publishWebProjects: False
-    projects: '**/**/Marco.AspNetCore.ExceptionHandling.*.csproj'
+    projects: '**/**/Marco.AspNetCore.*.csproj'
     arguments: '--configuration $(BuildConfiguration) --output $(Build.ArtifactStagingDirectory)'
     zipAfterPublish: False
 
@@ -66,7 +67,7 @@ steps:
     command: pack
     packagesToPack: '**/**/Marco.AspNetCore.ExceptionHandling.csproj'
     versioningScheme: byEnvVar
-    versionEnvVar: Pack2Version
+    versionEnvVar: Pack1Version
 - task: NuGetCommand@2
   displayName: Push Marco.AspNetCore.ExceptionHandling to NuGet.org
   condition: eq(variables['Pack1PushToNuget'], 'True')
