@@ -9,3 +9,4 @@ Package for handling core exceptions.
 ||Version|Downloads|
 |---------------------------|:---:|:---:|
 |**Marco.ExceptionHandling**|[![NuGet](https://img.shields.io/nuget/v/Marco.ExceptionHandling.svg)](https://www.nuget.org/packages/Marco.ExceptionHandling/)|![NuGet](https://img.shields.io/nuget/dt/Marco.ExceptionHandling.svg)|
+|**Marco.ExceptionHandling.Abstractions**|[![NuGet](https://img.shields.io/nuget/v/Marco.ExceptionHandling.Abstractions.svg)](https://www.nuget.org/packages/Marco.ExceptionHandling.Abstractions/)|![NuGet](https://img.shields.io/nuget/dt/Marco.ExceptionHandling.Abstractions.svg)|
