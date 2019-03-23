@@ -15,7 +15,7 @@ variables:
   buildConfiguration: 'Release'
 
 #Marco.ExceptionHandling.Abstractions
-  Pack1Version: '1.2.0'
+  Pack1Version: '1.3.0'
   Pack1PushToNuget: True
 
 #Marco.ExceptionHandling
@@ -87,7 +87,7 @@ steps:
   condition: eq(variables['Pack2PushToNuget'], 'True')
   inputs:
     command: pack
-    packagesToPack: '**/**/Marco.AspNetCore.ExceptionHandling.csproj'
+    packagesToPack: '**/**/Marco.ExceptionHandling.csproj'
     versioningScheme: byEnvVar
     versionEnvVar: Pack2Version
 - task: NuGetCommand@2
