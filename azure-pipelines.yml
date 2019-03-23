@@ -19,7 +19,7 @@ variables:
   Pack1PushToNuget: False
 
 #Marco.ExceptionHandling
-  Pack2Version: '1.0.0'
+  Pack2Version: '1.4.0'
   Pack2PushToNuget: True
 
 steps:
