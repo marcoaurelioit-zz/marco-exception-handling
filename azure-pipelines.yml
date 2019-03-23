@@ -14,9 +14,13 @@ variables:
   buildPlatform: 'Any CPU'
   buildConfiguration: 'Release'
 
-#ExceptionHandling
-  Pack1Version: '1.0.2'
-  Pack1PushToNuget: False
+#Marco.ExceptionHandling.Abstractions
+  Pack1Version: '1.2.0'
+  Pack1PushToNuget: True
+
+#Marco.ExceptionHandling
+  Pack2Version: '1.2.0'
+  Pack2PushToNuget: True
 
 steps:
 # Install NuGet Tool
@@ -50,7 +54,7 @@ steps:
   inputs:
     command: publish
     publishWebProjects: False
-    projects: '**/**/Marco.AspNetCore.*.csproj'
+    projects: '**/**/Marco.*.csproj'
     arguments: '--configuration $(BuildConfiguration) --output $(Build.ArtifactStagingDirectory)'
     zipAfterPublish: False
 
@@ -58,21 +62,40 @@ steps:
 - task: PublishBuildArtifacts@1
   displayName: Publish Artifacts
 
-# Publish Marco.AspNetCore.ExceptionHandling to NuGet.org
+# Publish Marco.ExceptionHandling.Abstractions to NuGet.org
 - task: DotNetCoreCLI@2
-  displayName: Pack Marco.AspNetCore.ExceptionHandling
+  displayName: Pack Marco.ExceptionHandling
   condition: eq(variables['Pack1PushToNuget'], 'True')
   inputs:
     command: pack
-    packagesToPack: '**/**/Marco.AspNetCore.ExceptionHandling.csproj'
+    packagesToPack: '**/**/Marco.ExceptionHandling.Abstractions.csproj'
     versioningScheme: byEnvVar
     versionEnvVar: Pack1Version
 - task: NuGetCommand@2
-  displayName: Push Marco.AspNetCore.ExceptionHandling to NuGet.org
+  displayName: Push Marco.ExceptionHandling.Abstractions to NuGet.org
   condition: eq(variables['Pack1PushToNuget'], 'True')
   continueOnError: True
   inputs:
     command: push
     nuGetFeedType: external
-    packagesToPush: '$(build.artifactStagingDirectory)/Marco.AspNetCore.ExceptionHandling.*.nupkg'
+    packagesToPush: '$(build.artifactStagingDirectory)/Marco.ExceptionHandling.Abstractions.*.nupkg'
+    publishFeedCredentials: 'apikey-nuget-marco-exception-handling-abstractions'
+
+# Publish Marco.ExceptionHandling to NuGet.org
+- task: DotNetCoreCLI@2
+  displayName: Pack Marco.ExceptionHandling
+  condition: eq(variables['Pack2PushToNuget'], 'True')
+  inputs:
+    command: pack
+    packagesToPack: '**/**/Marco.AspNetCore.ExceptionHandling.csproj'
+    versioningScheme: byEnvVar
+    versionEnvVar: Pack2Version
+- task: NuGetCommand@2
+  displayName: Push Marco.ExceptionHandling to NuGet.org
+  condition: eq(variables['Pack2PushToNuget'], 'True')
+  continueOnError: True
+  inputs:
+    command: push
+    nuGetFeedType: external
+    packagesToPush: '$(build.artifactStagingDirectory)/Marco.ExceptionHandling.*.nupkg'
     publishFeedCredentials: 'apikey-nuget-marco-exception-handling'
