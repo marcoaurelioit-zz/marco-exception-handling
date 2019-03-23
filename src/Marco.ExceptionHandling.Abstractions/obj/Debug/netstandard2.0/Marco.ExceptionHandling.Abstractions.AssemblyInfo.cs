@@ -11,8 +11,10 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("Marco.ExceptionHandling.Abstractions")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("Marco")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
+[assembly: System.Reflection.AssemblyCopyrightAttribute("Marco (C) 2019")]
+[assembly: System.Reflection.AssemblyDescriptionAttribute("This package abstractions for exception handling.")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
 [assembly: System.Reflection.AssemblyProductAttribute("Marco.ExceptionHandling.Abstractions")]
