@@ -1,0 +1,5 @@
+D:\Desenvolvimento\marco-exception-handling\src\Marco.ExceptionHandling.Abstractions\bin\Debug\netstandard2.0\Marco.ExceptionHandling.Abstractions.deps.json
+D:\Desenvolvimento\marco-exception-handling\src\Marco.ExceptionHandling.Abstractions\bin\Debug\netstandard2.0\Marco.ExceptionHandling.Abstractions.dll
+D:\Desenvolvimento\marco-exception-handling\src\Marco.ExceptionHandling.Abstractions\obj\Debug\netstandard2.0\Marco.ExceptionHandling.Abstractions.csproj.CoreCompileInputs.cache
+D:\Desenvolvimento\marco-exception-handling\src\Marco.ExceptionHandling.Abstractions\obj\Debug\netstandard2.0\Marco.ExceptionHandling.Abstractions.AssemblyInfoInputs.cache
+D:\Desenvolvimento\marco-exception-handling\src\Marco.ExceptionHandling.Abstractions\obj\Debug\netstandard2.0\Marco.ExceptionHandling.Abstractions.AssemblyInfo.cs
