@@ -15,12 +15,12 @@ variables:
   buildConfiguration: 'Release'
 
 #Marco.ExceptionHandling.Abstractions
-  Pack1Version: '1.4.0'
+  Pack1Version: '1.6.0'
   Pack1PushToNuget: False
 
 #Marco.ExceptionHandling
-  Pack2Version: '1.4.0'
-  Pack2PushToNuget: True
+  Pack2Version: '1.6.0'
+  Pack2PushToNuget: False
 
 steps:
 # Install NuGet Tool
