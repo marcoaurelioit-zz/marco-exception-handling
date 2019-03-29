@@ -1,5 +1,5 @@
 pool:
-  vmImage: 'VS2017-Win2016'
+  vmImage: 'windows-2019'
 
 trigger:
   branches:
@@ -15,11 +15,11 @@ variables:
   buildConfiguration: 'Release'
 
 #Marco.ExceptionHandling.Abstractions
-  Pack1Version: '1.2.0'
-  Pack1PushToNuget: True
+  Pack1Version: '1.4.0'
+  Pack1PushToNuget: False
 
 #Marco.ExceptionHandling
-  Pack2Version: '1.2.0'
+  Pack2Version: '1.4.0'
   Pack2PushToNuget: True
 
 steps:
@@ -87,7 +87,7 @@ steps:
   condition: eq(variables['Pack2PushToNuget'], 'True')
   inputs:
     command: pack
-    packagesToPack: '**/**/Marco.AspNetCore.ExceptionHandling.csproj'
+    packagesToPack: '**/**/Marco.ExceptionHandling.csproj'
     versioningScheme: byEnvVar
     versionEnvVar: Pack2Version
 - task: NuGetCommand@2

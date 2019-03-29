@@ -8,4 +8,5 @@ Package for handling core exceptions.
 ## Nuget Packages
 ||Version|Downloads|
 |---------------------------|:---:|:---:|
-|**Marco.AspNetCore.ExceptionHandling**|[![NuGet](https://img.shields.io/nuget/v/Marco.AspNetCore.ExceptionHandling.svg)](https://www.nuget.org/packages/Marco.AspNetCore.ExceptionHandling/)|![NuGet](https://img.shields.io/nuget/dt/Marco.AspNetCore.ExceptionHandling.svg)|
+|**Marco.ExceptionHandling**|[![NuGet](https://img.shields.io/nuget/v/Marco.ExceptionHandling.svg)](https://www.nuget.org/packages/Marco.ExceptionHandling/)|![NuGet](https://img.shields.io/nuget/dt/Marco.ExceptionHandling.svg)|
+|**Marco.ExceptionHandling.Abstractions**|[![NuGet](https://img.shields.io/nuget/v/Marco.ExceptionHandling.Abstractions.svg)](https://www.nuget.org/packages/Marco.ExceptionHandling.Abstractions/)|![NuGet](https://img.shields.io/nuget/dt/Marco.ExceptionHandling.Abstractions.svg)|
