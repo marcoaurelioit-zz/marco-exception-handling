@@ -7,7 +7,7 @@ using Newtonsoft.Json;
 
 namespace Marco.ExceptionHandling
 {
-    internal class JsonContractResolverCoreException : CamelCasePropertyNamesContractResolver
+    internal class JsonContractResolverForCoreException : CamelCasePropertyNamesContractResolver
     {
         private static readonly HashSet<string> _ignoreProperties = new HashSet<string>(
             typeof(Exception).GetProperties().Where(p => p.Name != nameof(Exception.Message))

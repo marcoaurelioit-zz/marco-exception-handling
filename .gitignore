@@ -10,3 +10,5 @@
 /src/Marco.AspNetCore.ExceptionHandling/bin/Debug/netcoreapp2.1
 /src/Marco.AspNetCore.ExceptionHandling/obj/Debug/netcoreapp2.1
 /src/Marco.AspNetCore.ExceptionHandling/obj
+/src/Marco.ExceptionHandling/bin/Debug/netcoreapp2.1
+/src/Marco.ExceptionHandling.Abstractions/bin/Debug/netstandard1.6
