@@ -1,5 +1,4 @@
 ﻿using Marco.ExceptionHandling;
-using Marco.ExceptionHandling.Abstractions;
 using System;
 
 namespace Microsoft.Extensions.DependencyInjection

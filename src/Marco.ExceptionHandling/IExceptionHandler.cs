@@ -1,8 +1,8 @@
-﻿using Microsoft.AspNetCore.Http;
-using System;
+﻿using System;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Http;
 
-namespace Marco.ExceptionHandling.Abstractions
+namespace Marco.ExceptionHandling
 {
     public interface IExceptionHandler
     {
