@@ -1,4 +1,5 @@
-[![Build Status](https://dev.azure.com/marcoaurelioit/marco-exception-handling/_apis/build/status/marcoaurelioit.marco-exception-handling)](https://dev.azure.com/marcoaurelioit/marco-exception-handling/_build/latest?definitionId=1)
+[![Build status](https://ci.appveyor.com/api/projects/status/6wg2c9qga2eevwfa?svg=true)](https://ci.appveyor.com/project/maureliobrasil/marco-exception-handling)
+![.NET Core](https://github.com/marcoaurelioit/marco-exception-handling/workflows/.NET%20Core/badge.svg)
 [![CodeFactor](https://www.codefactor.io/repository/github/marcoaurelioit/marco-exception-handling/badge)](https://www.codefactor.io/repository/github/marcoaurelioit/marco-exception-handling)
 [![GitHub release](https://img.shields.io/github/release/marcoaurelioit/marco-exception-handling.svg)](https://github.com/marcoaurelioit/marco-exception-handling/releases)
 
@@ -8,5 +9,4 @@ Package for handling core exceptions.
 ## Nuget Packages
 ||Version|Downloads|
 |---------------------------|:---:|:---:|
-|**Marco.ExceptionHandling**|[![NuGet](https://img.shields.io/nuget/v/Marco.ExceptionHandling.svg)](https://www.nuget.org/packages/Marco.ExceptionHandling/)|![NuGet](https://img.shields.io/nuget/dt/Marco.ExceptionHandling.svg)|
-|**Marco.ExceptionHandling.Abstractions**|[![NuGet](https://img.shields.io/nuget/v/Marco.ExceptionHandling.Abstractions.svg)](https://www.nuget.org/packages/Marco.ExceptionHandling.Abstractions/)|![NuGet](https://img.shields.io/nuget/dt/Marco.ExceptionHandling.Abstractions.svg)|
+|**Marco.ExceptionHandling**|[![NuGet](https://img.shields.io/nuget/v/Marco.ExceptionHandling.svg)](https://www.nuget.org/packages/Marco.ExceptionHandling/)|![NuGet](https://img.shields.io/nuget/dt/Marco.ExceptionHandling.svg)
