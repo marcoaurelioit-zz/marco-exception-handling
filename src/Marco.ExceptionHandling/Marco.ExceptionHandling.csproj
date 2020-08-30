@@ -11,7 +11,7 @@
     <PackageId>Marco.ExceptionHandling</PackageId>
     <RepositoryType>Public</RepositoryType>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <Version>1.7.0</Version>
+    <Version>1.7.1</Version>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -27,6 +27,7 @@
   <ItemGroup>
     <PackageReference Include="Marco.Exceptions.Core" Version="1.2.3" />
     <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="2.2.0" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="3.1.7" />
     <PackageReference Include="Microsoft.Extensions.Logging" Version="3.1.7" />
     <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
