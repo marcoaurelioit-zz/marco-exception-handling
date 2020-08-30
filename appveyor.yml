@@ -9,13 +9,13 @@ build:
   verbosity: minimal
 artifacts:
 - path: '**\*.nupkg'
-  name: Marco.ExceptionHandling
-- path: '**\*.nupkg'
   name: Marco.ExceptionHandling.Abstractions
+- path: '**\*.nupkg'
+  name: Marco.ExceptionHandling
 deploy:
 - provider: NuGet
   api_key:
-    secure: uXr+x5ThtyLuhAJw9mbQSMHez0jozItL+yH7Mqnv1cz+KRfwbNkaAAZX/0aPIjJy
+    secure: B4moTSnYcslKTy4E9psGJvANYyoDuq4NBVLNWgyqc/iPLjkOVgS7+GTW7UOfNCsV
 - provider: NuGet
   api_key:
-    secure: B4moTSnYcslKTy4E9psGJvANYyoDuq4NBVLNWgyqc/iPLjkOVgS7+GTW7UOfNCsV
+    secure: uXr+x5ThtyLuhAJw9mbQSMHez0jozItL+yH7Mqnv1cz+KRfwbNkaAAZX/0aPIjJy
