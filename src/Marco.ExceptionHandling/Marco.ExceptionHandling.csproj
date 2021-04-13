@@ -11,7 +11,7 @@
     <PackageId>Marco.ExceptionHandling</PackageId>
     <RepositoryType>Public</RepositoryType>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <Version>1.7.2</Version>
+    <Version>1.7.3</Version>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
